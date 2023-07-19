@@ -8,8 +8,15 @@
  */
 int main(void)
 {
-	char alxprint[10] = "_putchar";
+	char alxprint[] = "_putchar";
 
-	printf("%s\n", alxprint);
+	int i;
+
+	for(i = 0; i < 8;i++)
+	{
+		_putchar(alxprint[i]);
+	}
+
+	_putchar();
 	return (0);
 }
