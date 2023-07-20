@@ -19,5 +19,5 @@ void print_alphabet_x10(void)
 
 		_putchar('\n');
 		count++;
-	} while(count < 9);
+	} while(count <= 9);
 }
