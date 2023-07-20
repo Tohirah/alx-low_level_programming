@@ -11,9 +11,12 @@ int main(void)
 		int loweralpha;
 
 		for (loweralpha = 'a'; loweralpha <= 'z'; loweralpha++)
+		{
 			_putchar(loweralpha);
-
-		_putchar('\n');
-		return (0);
+		}
 	}
+
+	 _putchar('\n');
+                return (0);
+        }
 }
