@@ -10,7 +10,7 @@ int main(void)
 	long num = 612852475143;
 
 	int divi;
-	
+
 	while (divi++ < num / 2)
 	{
 		if (num % divi == 0)
