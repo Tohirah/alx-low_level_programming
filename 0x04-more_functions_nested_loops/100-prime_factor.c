@@ -7,22 +7,24 @@
 
 int main(void)
 {
-	long no = 612852475143;
+	long num = 612852475143;
 
-	while (divide++ < no / 2)
+	int divi;
+	
+	while (divi++ < num / 2)
 	{
-		if (no % divide == 0)
+		if (num % divi == 0)
 		{
-			no /= 2;
+			num /= 2;
 			continue;
 		}
 
-		for (divide = 3; divide < no / 2; divide += 2)
+		for (divi = 3; divi < num / 2; divi += 2)
 		{
-			if (no % divide == 0)
-			no /= divide;
+			if (num % divi == 0)
+				num /= divi;
 		}
 	}
-	printf("%ld\n", no);
+	printf("%ld\n", num);
 	return (0);
 }
