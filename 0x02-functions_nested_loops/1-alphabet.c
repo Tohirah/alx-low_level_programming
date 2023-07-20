@@ -4,15 +4,6 @@
  * main - print lowercase alphabet
  * Return: return 0
  */
-int main(void)
-{
-	void print_alphabet(void);
-
-	 _putchar('\n');
-                return (0);
-        }
-}
-
 void print_alphabet(void)
 {
 	int loweralpha;
@@ -21,4 +12,6 @@ void print_alphabet(void)
 	{
 		_putchar(loweralpha);
 	}
+
+	_putchar('\n');
 }
