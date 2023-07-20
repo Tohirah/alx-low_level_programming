@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * int_abs - compute absolute value
+ * _abs - prints absolute value
+ * @i: parameter to be checked
+ * Return - return 0
  */
 
 int _abs(int i)
