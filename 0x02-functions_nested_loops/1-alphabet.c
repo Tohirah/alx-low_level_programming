@@ -6,17 +6,19 @@
  */
 int main(void)
 {
-	void print_alphabet(void)
-	{
-		int loweralpha;
-
-		for (loweralpha = 'a'; loweralpha <= 'z'; loweralpha++)
-		{
-			_putchar(loweralpha);
-		}
-	}
+	void print_alphabet(void);
 
 	 _putchar('\n');
                 return (0);
         }
+}
+
+void print_alphabet(void)
+{
+	int loweralpha;
+
+	for (loweralpha = 'a'; loweralpha <= 'z'; loweralpha++)
+	{
+		_putchar(loweralpha);
+	}
 }
