@@ -2,12 +2,12 @@
 
 /**
  * print_number - prints an integer with _putchar
- * @n - integer to be printed
+ * @n: integer to be printed
  */
 
 void print_number(int n)
 {
-	char num = n + '0';
+	unsigned int num = n;
 
 	if (n < 0)
 	{
