@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - print arguments passed
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: return count
+ */
 int main(int argc, char *argv[])
 {
 	int count;
