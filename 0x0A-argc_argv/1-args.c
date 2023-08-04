@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - print argument count
- * @argc: argument count
- * @argv: argument array
+ * main - prints no of arguments passed to it
+ * @argc: argument counter
+ * @argv: argume vector
  *
+ * Return: return argument no
  */
 
 int main(int argc, char *argv[])
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
 	for (count = 0; count < argc; count++)
 	{
 		if (count == 0)
-		continue;
+			continue;
 
 		num += 1;
 	}
