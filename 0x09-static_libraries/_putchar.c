@@ -1,6 +1,7 @@
 #include <unistd.h>
 
-/** _putchar - prijts the char passedc into it
+/**
+ * _putchar - prijts the char passedc into it
  * @c: character tp be printed
  *
  * Return: return 0 or 1

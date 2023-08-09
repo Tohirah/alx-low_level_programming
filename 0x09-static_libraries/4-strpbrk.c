@@ -10,7 +10,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int y,z;
+	unsigned int y, z;
 
 	for (y = 0; s[y] != '\0'; y++)
 	{
