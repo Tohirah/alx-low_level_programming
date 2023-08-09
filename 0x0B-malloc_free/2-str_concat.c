@@ -41,10 +41,11 @@ char *str_concat(char *s1, char *s2)
 		newstr[y] = s1[y];
 	}
 
+
 	for (z = 0; z <= k; z++)
 	{
-		newstr[k] = s2[z];
-		k++;
+		newstr[y] = s2[z];
+		y++;
 	}
 
 	return (newstr);
