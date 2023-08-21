@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
-* _calloc - allocate memory using malloc and initialize it to zero
+* _calloc - allocate memory from an array
 *@nmemb: number of elements
 *@size: size of the memory block to be allocated
 *
