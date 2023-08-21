@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 
 /**
@@ -12,13 +14,13 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *temp_block;
+	void *blocktemp;
 	unsigned int i;
 
 	if (ptr == NULL)
 	{
-		temp_block = malloc(new_size);
-		return (temp_block);
+		blocktemp = malloc(new_size);
+		return (blocktemp);
 	}
 	else if (new_size == old_size)
 		return (ptr);
@@ -30,13 +32,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else
 	{
-		temp_block = malloc(new_size);
-		if (temp_block != NULL)
+		blocktemp = malloc(new_size);
+		if (blocktemp != NULL)
 		{
 			for (i = 0; i < min(old_size, new_size); i++)
-				*((char *)temp_block + i) = *((char *) ptr + i);
+				*((char *)blocktemp + i) = *((char *) ptr + i);
 			free(ptr);
-			return (temp_block);
+			return (blocktemp);
 		}
 		else
 			return (NULL);
